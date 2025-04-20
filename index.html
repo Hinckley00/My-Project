@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Web Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,23 +14,23 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a href="#resume">Resume</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- about -->
-        <section id="about">
+        <section id="about" class="section about">
             <h2>About Me</h2>
             <p>This is my portfolio website.</p>
             <!-- <YouTube video> -->
@@ -41,42 +42,48 @@
              </iframe>   
         </section>
         <!-- work -->
-        <section id="work">
+        <section id="work" class="section work">
             <h2>My Work</h2>
            
             <!-- A simple list -->
              <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
+                <li>Proficient in MsWord</li>
+                <li>Marketer</li>
+                <li>System builder</li>
              </ul>
 
             <!-- A simple table -->
-            <table border="5">
+            <table border="10">
                 <tr>
-                    <th>Proficient in MsWord</th>
-                    <th>Marketer</th>
-                    <th>System builder</th>
-                </tr>
-                <tr>
-                    <td>Super Skill</td>
-                    <td>Duration</td>
-                    <td>Status</td>
+                    <td><b>Super Skill</b></td>
+                    <td><b>Duration</b></td>
+                    <td><b>Status</b></td>
                 </tr>
                 <tr>
                     <td>HTML Basics</td>
                     <td>1 Week</td>
                     <td>Completed</td>
                 </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>1 Week</td>
+                    <td>Ongoing</td>
+                </tr>
 
             </table>
         </section>
         <!-- resume -->
-        <section>
+        <section id="resume" class="section resume">
+            <h2>My Resume</h2>
+            <p>Name: Hinckley Nwaelele</p>
+            <p>Skills: Html, Css, Java Script</p>
+            <p>Education: Go My Code Student</p>
+
+            <p><a href="my resume.pdf" download>Download Resume</a></a></p>
 
         </section>
         <!-- contact -->
-        <section id="contact">
+        <section id="contact" class="section contact">
             <h2>Contact Me</h2>
             <b>Email:</b> <a href="email"><I>nwaelelehinckley@gmail.com</I></a><br>
             <b>Phone:</b> <a href="phone number">09032605861</a>
@@ -92,13 +99,13 @@
             <label for="Your Name"></label><br>
             <input type="text" name="name"><br><br>
             
-            <button type="submit">
-                send
+            <button class="submit" type="submit">
+               <b>SEND</b>
             </button>  
         </form>
     </main>
-    <footer>
-       <p>&copy; 2025. All rights reserved</p>
+    <footer class="footer">
+       <p>&copy; 2025. Hinckley. My Project. All rights reserved</p>
     </footer>
 </body>
 </html>
